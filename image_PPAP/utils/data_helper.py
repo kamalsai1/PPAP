@@ -6,7 +6,7 @@ import os
 import math
 import time
 from tensorflow.examples.tutorials.mnist import input_data
-from tensorflow.python.keras._impl.keras.datasets.cifar10 import load_data
+from tensorflow.keras.datasets import cifar10
 from glob import glob
 from random import shuffle
 from utils.download import download_celeb_a, download_lsun
@@ -69,7 +69,7 @@ def data_loader(dataset):
         width = 32
         height = 32
         channels = 3    
-        (x_train, y_train), (x_test, y_test) = load_data()
+        (x_train, y_train), (x_test, y_test) = cifar10.load_data()
         x_train = normalize(x_train)
         x_test = normalize(x_test)
 

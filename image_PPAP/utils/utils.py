@@ -3,7 +3,7 @@ import scipy.misc
 import numpy as np
 import tensorflow as tf
 import cv2
-from scipy.misc import toimage
+# from scipy.misc import toimage
 import scipy.io as sio
 import matplotlib.pyplot as plt
 plt.switch_backend('agg')
